@@ -5,6 +5,8 @@ import { PrismaModule } from './prisma/prisma.module';
 import { ConfigModule as AppConfigModule } from './config/config.module';
 import { HealthController } from './common/controllers/health.controller';
 import { AuthModule } from './modules/auth/auth.module';
+import { ContactsModule } from './modules/contacts/contacts.module';
+import { LeadsModule } from './modules/leads/leads.module';
 
 @Module({
   imports: [
@@ -16,10 +18,11 @@ import { AuthModule } from './modules/auth/auth.module';
     TerminusModule,
     PrismaModule,
     AuthModule,
+    ContactsModule,
+    LeadsModule,
     // Feature modules (uncomment as milestones progress):
-    // UsersModule, ContactsModule, LeadsModule, CampaignsModule,
-    // WorkflowsModule, EmailModule, IntegrationsModule, AnalyticsModule,
-    // NotificationsModule
+    // UsersModule, CampaignsModule, WorkflowsModule, EmailModule,
+    // IntegrationsModule, AnalyticsModule, NotificationsModule
   ],
   controllers: [HealthController],
   providers: [],
