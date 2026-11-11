@@ -54,4 +54,10 @@ coverage/
 .cache/
 .vite/
 
+# Test artifacts
+coverage/
+playwright-report/
+test-results/
+playwright/.cache/
+
 # End of file
