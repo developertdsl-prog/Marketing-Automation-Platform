@@ -7,6 +7,8 @@ import { HealthController } from './common/controllers/health.controller';
 import { AuthModule } from './modules/auth/auth.module';
 import { ContactsModule } from './modules/contacts/contacts.module';
 import { LeadsModule } from './modules/leads/leads.module';
+import { EmailTemplatesModule } from './modules/email-templates/email-templates.module';
+import { CampaignsModule } from './modules/campaigns/campaigns.module';
 
 @Module({
   imports: [
@@ -20,8 +22,10 @@ import { LeadsModule } from './modules/leads/leads.module';
     AuthModule,
     ContactsModule,
     LeadsModule,
+    EmailTemplatesModule,
+    CampaignsModule,
     // Feature modules (uncomment as milestones progress):
-    // UsersModule, CampaignsModule, WorkflowsModule, EmailModule,
+    // UsersModule, WorkflowsModule, EmailModule,
     // IntegrationsModule, AnalyticsModule, NotificationsModule
   ],
   controllers: [HealthController],

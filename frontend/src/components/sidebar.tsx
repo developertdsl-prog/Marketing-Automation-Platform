@@ -23,8 +23,8 @@ const navigation = [
   { name: 'Contacts', href: '/contacts', icon: Users },
   { name: 'Leads', href: '/leads', icon: Target },
   { name: 'Campaigns', href: '/campaigns', icon: Mail },
-  { name: 'Automation', href: '/automation', icon: Bot },
   { name: 'Email Templates', href: '/templates', icon: MailPlus },
+  { name: 'Automation', href: '/automation', icon: Bot },
   { name: 'Analytics', href: '/analytics', icon: BarChart3 },
 ]
 
