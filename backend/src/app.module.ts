@@ -12,6 +12,7 @@ import { CampaignsModule } from './modules/campaigns/campaigns.module';
 import { WorkflowsModule } from './modules/workflows/workflows.module';
 import { IntegrationsModule } from './modules/integrations/integrations.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
+import { AnalyticsModule } from './modules/analytics/analytics.module';
 
 @Module({
   imports: [
@@ -30,9 +31,9 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
     WorkflowsModule,
     IntegrationsModule,
     NotificationsModule,
+    AnalyticsModule,
     // Feature modules (uncomment as milestones progress):
     // UsersModule, EmailModule,
-    // AnalyticsModule
   ],
   controllers: [HealthController],
   providers: [],
