@@ -9,6 +9,7 @@ import { ContactsModule } from './modules/contacts/contacts.module';
 import { LeadsModule } from './modules/leads/leads.module';
 import { EmailTemplatesModule } from './modules/email-templates/email-templates.module';
 import { CampaignsModule } from './modules/campaigns/campaigns.module';
+import { WorkflowsModule } from './modules/workflows/workflows.module';
 
 @Module({
   imports: [
@@ -24,8 +25,9 @@ import { CampaignsModule } from './modules/campaigns/campaigns.module';
     LeadsModule,
     EmailTemplatesModule,
     CampaignsModule,
+    WorkflowsModule,
     // Feature modules (uncomment as milestones progress):
-    // UsersModule, WorkflowsModule, EmailModule,
+    // UsersModule, EmailModule,
     // IntegrationsModule, AnalyticsModule, NotificationsModule
   ],
   controllers: [HealthController],
