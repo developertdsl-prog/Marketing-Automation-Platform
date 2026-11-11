@@ -10,6 +10,8 @@ import { LeadsModule } from './modules/leads/leads.module';
 import { EmailTemplatesModule } from './modules/email-templates/email-templates.module';
 import { CampaignsModule } from './modules/campaigns/campaigns.module';
 import { WorkflowsModule } from './modules/workflows/workflows.module';
+import { IntegrationsModule } from './modules/integrations/integrations.module';
+import { NotificationsModule } from './modules/notifications/notifications.module';
 
 @Module({
   imports: [
@@ -26,9 +28,11 @@ import { WorkflowsModule } from './modules/workflows/workflows.module';
     EmailTemplatesModule,
     CampaignsModule,
     WorkflowsModule,
+    IntegrationsModule,
+    NotificationsModule,
     // Feature modules (uncomment as milestones progress):
     // UsersModule, EmailModule,
-    // IntegrationsModule, AnalyticsModule, NotificationsModule
+    // AnalyticsModule
   ],
   controllers: [HealthController],
   providers: [],

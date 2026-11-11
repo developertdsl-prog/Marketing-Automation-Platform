@@ -14,6 +14,8 @@ import {
   LogOut,
   Bot,
   MessageSquare,
+  ShieldCheck,
+  Bell,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AvatarFallback } from '@/components/ui/avatar'
@@ -25,6 +27,8 @@ const navigation = [
   { name: 'Campaigns', href: '/campaigns', icon: Mail },
   { name: 'Email Templates', href: '/templates', icon: MailPlus },
   { name: 'Automation', href: '/workflows', icon: Bot },
+  { name: 'Integrations', href: '/integrations', icon: ShieldCheck },
+  { name: 'Notifications', href: '/notifications', icon: Bell },
   { name: 'Analytics', href: '/analytics', icon: BarChart3 },
 ]
 
